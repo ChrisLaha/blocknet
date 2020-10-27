@@ -26,6 +26,7 @@ To begin, you'll need to download a few things.
 
 * So enter 2 for Clique- proof-of-authority
 * Leave block time at default by clicking enter.
+---
 
 3. Next we'll choose the accounts to seal.
 * Copy and paste the node1 public key excluding the 0x portion.
