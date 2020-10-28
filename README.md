@@ -12,10 +12,10 @@ To begin, you'll need to download a few things.
 * That's it, you have everything you need to create your very own blockchain network!
 ---
 
-1. Open your terminal or git-bash and navigate to your blockchain-tools folder and create two node accounts with a separate datadir for each.
+1. Open your terminal or git-bash and navigate to your blockchain-tools folder and create two node accounts and passwords with a separate datadir for each. 
 * ./geth --datadir node1 account new
 * ./geth --datadir node2 account new
-
+#### Save your passwords for later
 #### Save the public key and path to secret key. We'll need this later. Never give anyone access to your Private Keys.
 ---
 2. Next we'll genereate your genesis block. (The first block of the chain)
@@ -56,7 +56,7 @@ To begin, you'll need to download a few things.
 #### Now open a new terminal or git bash window.
 * Navigate to your blockchain-tools folder and type the following command and replace "SEALER_TWO_ADDRESS" with the public key for node2. Also replace the "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" portion with the enode address you saved in the last step.
 * ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
-#### If you entered a password earlier in geth then type that now and press enter. If you chose not to enter one, just click enter to run the node. (You will not see any text appear when typing in your password)
+#### Enter your password from node1 to run the node. (You will not see any text appear when typing in your password)
 ---
 6. Now we can open your MyCrypto desktop app.
 * Open MyCrypto app and click "Change Network" at the bottom left. 
